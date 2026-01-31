@@ -1,3 +1,17 @@
+<p align="center">
+   <a alt="Supports Minecraft 1.21.11" title="Go to Minecraft's Server download site" href="https://www.minecraft.net/en-us/download/server" > <img alt="Supported Minecraft Version" src="https://img.shields.io/badge/Minecraft-1.21.11-69986a" /></a>
+    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/X00LA/datapackloader" />
+    <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/X00LA/datapackloader/total">
+    <a alt="SpigotMC" title="Go to SpigotMC's download site" href="https://hub.spigotmc.org/jenkins/" >
+        <img alt="Supports SpigotMC" src="https://img.shields.io/badge/Supports-SpigotMC-gold?style=flat-square" /></a>
+    <a alt="Supports PaperMC" title="Go to PaperMC's download site" href="https://papermc.io/downloads/paper" >
+        <img alt="Supports PaperMC" src="https://img.shields.io/badge/Supports-PaperMC-blue" /></a>
+    <a alt="Supports Folia" title="Go to Folia's download site" href="https://papermc.io/downloads/folia">
+        <img alt="Supports Folia" src="https://img.shields.io/badge/Supports-Folia-green" /></a>
+    <a alt="Supports PurPur" title="Go to Purpur's download site" href="https://purpurmc.org/download/purpur">
+        <img alt="" src="https://img.shields.io/badge/Supports-PurPur-a947ff" /></a>
+</p>
+
 # ChunkyOffline Plugin
 
 A Paper plugin for offline chunk generation using the Chunky plugin. This plugin is fully compatible with Folia.
@@ -16,11 +30,6 @@ A Paper plugin for offline chunk generation using the Chunky plugin. This plugin
 - Paper 1.21.11+
 - Chunky plugin (1.3.152+)
 - Java 21+
-
-## Compatibility
-
-✅ **Paper Server** - Fully supported
-✅ **Folia Server** - Fully supported with async-safe operations
 
 ## Installation
 
@@ -102,7 +111,7 @@ Permission: `chunkyoffline.admin.config`
 ## Building
 
 ```bash
-gradle build
+gradle clean build -nodaemon
 ```
 
 The compiled JAR will be located in `build/libs/`.
@@ -111,10 +120,7 @@ The compiled JAR will be located in `build/libs/`.
 
 See LICENSE file for details.
 
-## Author
-
-xoola
-
 ## Support
 
 For issues or feature requests, please create an issue on GitHub.
+Want your language supported by this plugin? Feel free to use the en.json as template and create a new one with your language and open a request to merge it.

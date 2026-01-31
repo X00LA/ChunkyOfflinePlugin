@@ -1,0 +1,16 @@
+# ChunkyOffline Configuration
+# This file contains the settings for offline chunk generation
+
+# Language Settings
+# Supported languages: en (English), de (German)
+# You can add custom languages by creating JSON files in the lang/ folder
+language: de
+
+chunk-generation:
+  # Radius for chunk generation (in blocks)
+  radius: 10000
+  
+  # Center coordinates for chunk generation
+  center:
+    x: 0
+    z: 0

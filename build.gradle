@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+group = 'at.xoola.chunkyoffline'
+version = '1.1.4'
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'papermc'
+        url = 'https://repo.papermc.io/repository/maven-public/'
+    }
+    maven {
+        name = 'codemc'
+        url = 'https://repo.codemc.org/repository/maven-public/'
+    }
+    maven {
+        name = 'purpur'
+        url= 'https://repo.purpurmc.org/snapshots'
+    }
+}
+
+dependencies {
+    // Paper API 1.21.11 with Folia and Purpur compatibility
+    compileOnly 'io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT'
+
+    // Chunky API
+    compileOnly 'org.popcraft:chunky-common:1.4.40'
+    
+    // Gson for JSON language files
+    implementation 'com.google.code.gson:gson:2.10.1'
+    
+    // YAML handling
+    implementation 'org.yaml:snakeyaml:2.2'
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    archiveBaseName = 'ChunkyOffline'
+    archiveVersion = version
+}
+

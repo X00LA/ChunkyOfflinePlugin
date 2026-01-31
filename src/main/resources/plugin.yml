@@ -1,0 +1,37 @@
+name: ChunkyOffline
+version: 1.0.0
+description: Offline chunk generation extension for Chunky (Paper + Folia compatible)
+author: xoola
+main: at.xoola.chunkyoffline.ChunkyOfflinePlugin
+api-version: 1.21
+
+folia-supported: true
+
+depend:
+  - Chunky
+
+commands:
+  chunkyoffline:
+    description: ChunkyOffline main command
+    usage: /chunkyoffline <start|pause|resume|cancel|config>
+    aliases: [co]
+
+permissions:
+  chunkyoffline.admin.info:
+    description: Allows to see ChunkyOffline info messages
+    default: op
+  chunkyoffline.admin.start:
+    description: Allows to start chunk generation
+    default: op
+  chunkyoffline.admin.pause:
+    description: Allows to pause chunk generation
+    default: op
+  chunkyoffline.admin.resume:
+    description: Allows to resume chunk generation
+    default: op
+  chunkyoffline.admin.cancel:
+    description: Allows to cancel chunk generation
+    default: op
+  chunkyoffline.admin.config:
+    description: Allows to configure chunk generation settings
+    default: op

@@ -1,7 +1,7 @@
 <p align="center">
    <a alt="Supports Minecraft 1.21.11" title="Go to Minecraft's Server download site" href="https://www.minecraft.net/en-us/download/server" > <img alt="Supported Minecraft Version" src="https://img.shields.io/badge/Minecraft-1.21.11-69986a" /></a>
-    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/X00LA/datapackloader" />
-    <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/X00LA/datapackloader/total">
+    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/X00LA/ChunkyOffline-Plugin" />
+    <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/X00LA/ChunkyOffline-Plugin/total">
     <a alt="SpigotMC" title="Go to SpigotMC's download site" href="https://hub.spigotmc.org/jenkins/" >
         <img alt="Supports SpigotMC" src="https://img.shields.io/badge/Supports-SpigotMC-gold?style=flat-square" /></a>
     <a alt="Supports PaperMC" title="Go to PaperMC's download site" href="https://papermc.io/downloads/paper" >

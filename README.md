@@ -1,7 +1,12 @@
 <p align="center">
+   <img alt="Chunky Offline Plugin Logo" src="https://private-user-images.githubusercontent.com/5796516/543310678-e3ad1b37-7551-4a71-8709-7436d42dcb81.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njk4ODMyNzgsIm5iZiI6MTc2OTg4Mjk3OCwicGF0aCI6Ii81Nzk2NTE2LzU0MzMxMDY3OC1lM2FkMWIzNy03NTUxLTRhNzEtODcwOS03NDM2ZDQyZGNiODEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDEzMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAxMzFUMTgwOTM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjMzMDdmNDExZmY3YTYyMjk2Y2VkOGEyYzgxMDNlNDBlNjdlMzExYWRkMzVmMzk0ODE3ZDhhMWE5MmM0NGY3MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Q4kXwFDMmLyKGrn8MwHhe8uNkSkH--oea6UzJUniB7E" />
+</p>
+
+<p align="center">
    <a alt="Supports Minecraft 1.21.11" title="Go to Minecraft's Server download site" href="https://www.minecraft.net/en-us/download/server" > <img alt="Supported Minecraft Version" src="https://img.shields.io/badge/Minecraft-1.21.11-69986a" /></a>
-    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/X00LA/datapackloader" />
-    <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/X00LA/datapackloader/total">
+    <img alt="GitHub Release (latest)" src="https://img.shields.io/github/v/release/X00LA/ChunkyOfflinePlugin">
+    <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/X00LA/ChunkyOfflinePlugin/total" />
+    <img alt="GitHub Downloads (latest)" src="https://img.shields.io/github/downloads/X00LA/ChunkyOfflinePlugin/latest/total">
     <a alt="SpigotMC" title="Go to SpigotMC's download site" href="https://hub.spigotmc.org/jenkins/" >
         <img alt="Supports SpigotMC" src="https://img.shields.io/badge/Supports-SpigotMC-gold?style=flat-square" /></a>
     <a alt="Supports PaperMC" title="Go to PaperMC's download site" href="https://papermc.io/downloads/paper" >
@@ -9,7 +14,12 @@
     <a alt="Supports Folia" title="Go to Folia's download site" href="https://papermc.io/downloads/folia">
         <img alt="Supports Folia" src="https://img.shields.io/badge/Supports-Folia-green" /></a>
     <a alt="Supports PurPur" title="Go to Purpur's download site" href="https://purpurmc.org/download/purpur">
-        <img alt="" src="https://img.shields.io/badge/Supports-PurPur-a947ff" /></a>
+        <img alt="Supports Purpur" src="https://img.shields.io/badge/Supports-PurPur-a947ff" /></a>
+</p>
+
+<p align="center">
+    <a alt="Ko-Fi Donation Link" title="Support me on Ko-Fi" href="https://ko-fi.com/Y8Y1RKLT1">
+       <img alt="Ko-Fi Donation Banner" src="https://ko-fi.com/img/githubbutton_sm.svg" /></a>
 </p>
 
 # ChunkyOffline Plugin

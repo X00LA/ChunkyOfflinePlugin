@@ -83,18 +83,22 @@ public class ChunkyManager {
     private void executeChunkyCommandsDirectly(int x, int z, int radius) {
         String world = "world"; // Default world, could be configurable
         
-        // Execute commands directly - should work when called from command context
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky pause");
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky cancel");
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky world " + world);
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky center " + x + " " + z);
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky radius " + radius);
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky start");
-        
+        // Set flags immediately before async execution
         isGenerating.set(true); // Mark as generating
         autoModeEnabled.set(true); // Enable auto mode
-        broadcastMessage(plugin.getLanguageManager().getMessage("chunk.started", x, z, radius));
-        plugin.getLogger().info(plugin.getLanguageManager().getMessage("chunk.started", x, z, radius));
+        
+        // Execute commands in the global region for Folia compatibility
+        Bukkit.getGlobalRegionScheduler().run(plugin, task -> {
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky pause");
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky cancel");
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky world " + world);
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky center " + x + " " + z);
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky radius " + radius);
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky start");
+            
+            broadcastMessage(plugin.getLanguageManager().getMessage("chunk.started", x, z, radius));
+            plugin.getLogger().info(plugin.getLanguageManager().getMessage("chunk.started", x, z, radius));
+        });
     }
 
     public void pause() {
@@ -103,10 +107,13 @@ public class ChunkyManager {
             return;
         }
 
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky pause");
-        isGenerating.set(false); // Mark as paused
-        broadcastMessage(plugin.getLanguageManager().getMessage("chunk.paused"));
-        plugin.getLogger().info(plugin.getLanguageManager().getMessage("chunk.paused"));
+        isGenerating.set(false); // Mark as paused immediately
+        
+        Bukkit.getGlobalRegionScheduler().run(plugin, task -> {
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky pause");
+            broadcastMessage(plugin.getLanguageManager().getMessage("chunk.paused"));
+            plugin.getLogger().info(plugin.getLanguageManager().getMessage("chunk.paused"));
+        });
     }
 
     public void resume() {
@@ -115,12 +122,15 @@ public class ChunkyManager {
             return;
         }
 
+        isGenerating.set(true); // Mark as generating immediately
+        
         // Use "chunky continue" instead of "chunky start" to resume existing task
         // This matches the original datapack logic
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky continue");
-        isGenerating.set(true); // Mark as generating
-        broadcastMessage(plugin.getLanguageManager().getMessage("chunk.resumed"));
-        plugin.getLogger().info(plugin.getLanguageManager().getMessage("chunk.resumed"));
+        Bukkit.getGlobalRegionScheduler().run(plugin, task -> {
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky continue");
+            broadcastMessage(plugin.getLanguageManager().getMessage("chunk.resumed"));
+            plugin.getLogger().info(plugin.getLanguageManager().getMessage("chunk.resumed"));
+        });
     }
 
     public void cancel() {
@@ -129,12 +139,15 @@ public class ChunkyManager {
             return;
         }
 
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky pause");
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky cancel");
-        broadcastMessage(plugin.getLanguageManager().getMessage("chunk.cancelled"));
-        plugin.getLogger().info(plugin.getLanguageManager().getMessage("chunk.cancelled"));
         isGenerating.set(false);
         autoModeEnabled.set(false); // Disable auto mode when canceled
+        
+        Bukkit.getGlobalRegionScheduler().run(plugin, task -> {
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky pause");
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "chunky cancel");
+            broadcastMessage(plugin.getLanguageManager().getMessage("chunk.cancelled"));
+            plugin.getLogger().info(plugin.getLanguageManager().getMessage("chunk.cancelled"));
+        });
     }
 
     public boolean isAutoModeEnabled() {

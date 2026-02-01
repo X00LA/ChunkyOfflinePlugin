@@ -23,5 +23,13 @@ Thumbs.db
 # Temporary files
 *.tmp
 
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+
 # Minecraft/Bukkit specific
 # (falls du Server-Logs oder andere spezifische Dateien hast, füge sie hinzu)

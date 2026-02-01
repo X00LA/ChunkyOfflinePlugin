@@ -1,5 +1,5 @@
 <p align="center">
-   <img alt="Chunky Offline Plugin Logo" src="https://private-user-images.githubusercontent.com/5796516/543310678-e3ad1b37-7551-4a71-8709-7436d42dcb81.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njk4ODMyNzgsIm5iZiI6MTc2OTg4Mjk3OCwicGF0aCI6Ii81Nzk2NTE2LzU0MzMxMDY3OC1lM2FkMWIzNy03NTUxLTRhNzEtODcwOS03NDM2ZDQyZGNiODEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDEzMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAxMzFUMTgwOTM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjMzMDdmNDExZmY3YTYyMjk2Y2VkOGEyYzgxMDNlNDBlNjdlMzExYWRkMzVmMzk0ODE3ZDhhMWE5MmM0NGY3MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Q4kXwFDMmLyKGrn8MwHhe8uNkSkH--oea6UzJUniB7E" />
+   <img alt="Chunky Offline Plugin Logo" src="https://cdn.modrinth.com/data/qwcFrO9b/images/b95641416f69ff27719fbaf3e6f6e255716a100a.png" />
 </p>
 
 <p align="center">

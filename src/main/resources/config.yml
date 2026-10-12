@@ -2,7 +2,7 @@
 # This file contains the settings for offline chunk generation
 
 # Language Settings
-# Supported languages: en (English), de (German)
+# Supported languages: en (English), de (German), zh (Simplified Chinese)
 # You can add custom languages by creating JSON files in the lang/ folder
 language: de
 

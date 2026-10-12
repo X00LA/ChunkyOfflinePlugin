@@ -46,6 +46,7 @@ public class SimpleLanguageManager {
         // Load built-in languages from resources
         loadLanguageFromResource("en");
         loadLanguageFromResource("de");
+        loadLanguageFromResource("zh");
         
         plugin.getLogger().info(getMessage("language.loaded", languages.size(), String.join(", ", languages.keySet())));
     }
